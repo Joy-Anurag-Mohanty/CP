@@ -39,7 +39,7 @@ public class CVDRUN
     {
         int T = sc.nextInt();
 
-        Main ob = new Main();
+        CVDRUN ob = new CVDRUN();
 
         while(T-- > 0)
             ob.solve();
