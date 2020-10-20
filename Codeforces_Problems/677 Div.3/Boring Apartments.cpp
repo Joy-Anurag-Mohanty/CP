@@ -28,7 +28,7 @@ void solve()
             c += V[i].length();
             break;
         }
-        
+
         else
             c += V[i].length();
     }

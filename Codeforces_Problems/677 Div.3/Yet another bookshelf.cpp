@@ -12,7 +12,7 @@ void solve()
 
     for(int i = 0 ; i < N; i++)
         cin>>V[i];
-    
+
     int cnt = 0;
 
     vector<int>ind;
