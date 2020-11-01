@@ -15,7 +15,6 @@ ll foo(vector<ll>V, ll N)
             pre = V[i];
         }
     }
-
     return len;
 }
 
