@@ -16,7 +16,6 @@ pair<ll,int>dfs(int s)
         mex = max(mex,temp.first);
         size = size + temp.second;
     }
-    
     return {mex + size, size};
 }
 
