@@ -70,7 +70,7 @@ public class Solution
             arr.add(inum);
         }
 
-        solver1(arr);
-        solver2(arr);
+        solver1(arr); //Part 1
+        solver2(arr); //Part 2
     }
 }
