@@ -5,9 +5,32 @@ import java.util.*;
 public class Solution
 {
     static Scanner sc = new Scanner(System.in);
-    static ArrayList<Integer>arr = new ArrayList<>();
 
-    static void solver()
+    static void solver1(ArrayList<Integer>arr)
+    {
+        Collections.sort(arr);
+
+        int l = 0;
+        int r = arr.size() - 1;
+
+        while(l < r)
+        {
+            if(arr.get(l) + arr.get(r) == 2020)
+            {
+                long res = (long)(arr.get(l) * arr.get(r));
+                System.out.println(res);
+                return;
+            }
+
+            else if(arr.get(l) + arr.get(r) < 2020)
+                l++;
+            
+            else
+                r--;
+        }
+    }
+
+    static void solver2(ArrayList<Integer>arr)
     {
         Collections.sort(arr);
 
@@ -38,6 +61,8 @@ public class Solution
 
     public static void main(String[] args) 
     {
+        ArrayList<Integer>arr = new ArrayList<>();
+
         while(sc.hasNextLine())
         {
             String[] tokens = sc.nextLine().split("\\s");
@@ -45,6 +70,7 @@ public class Solution
             arr.add(inum);
         }
 
-        solver();
+        solver1(arr);
+        solver2(arr);
     }
 }
